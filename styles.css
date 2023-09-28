@@ -1,0 +1,87 @@
+/* Basic Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #0073e6, #00b3b3); /* Initial gradient background */
+    transition: background 0.5s; /* Transition for background color change */
+    z-index: 1000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s; /* Transition for font color change */
+}
+
+/* Styles for the hovered menu item */
+a:hover {
+    color: #0073e6;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 60px 0;
+}
+
+
+.content {
+    background: linear-gradient(45deg, #FF5733, #FFBD33, #33FF57, #33D9FF, #9333FF);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s infinite;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
